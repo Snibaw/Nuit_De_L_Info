@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Syphilismin</title>
+        <link rel="icon" href="../static/images/banana.png" type="image/png" />
+        <link rel="stylesheet" href="../static/style_game.css" />
+    </head>
+    <body>
+        <footer>
+            <div id="choices"></div>
+            <div id="character_box">dialogue_box</div>
+            <div id="dialogue_container" onclick="next_dialogue()">
+                <div id="dialogue_box">dialogue_box</div>
+            </div>
+            <!-- <button id="dialogue_button" onclick="next_dialogue()"></button> -->
+        </footer>
+        <div class="triangle"></div>
+    </body>
+    <script src="../static/scripts/next_dialogue.js"></script>
+    <script>
+        next_dialogue();
+    </script>
+</html>

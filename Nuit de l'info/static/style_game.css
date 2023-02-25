@@ -1,0 +1,173 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-image: url('./images/background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    padding: 0%;
+    margin: 0;
+}
+.dialogue_bloc {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+/*#dialogue_button::after {
+    content: '';
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: all 0.5s;
+}
+#dialogue_button:hover::after {
+    transform: rotate(150deg);
+}*/
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 35%;
+    padding-bottom: 20px;
+}
+
+#choices > button {
+    width: 40%;
+    height: 100%;
+
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all 0.2s;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5), 0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+}
+
+#choices > button::after {
+    content: '';
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: -70px;
+    left: -370px;
+    background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: all 0.5s;
+}
+#choices > button:hover::after {
+    transform: rotate(150deg);
+}
+
+#choices > button:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.25), -10px 10px 25px 0px rgba(39, 200, 255, 0.25);
+}
+
+#character_box {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+    width: 30%;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+#dialogue_container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    /* gradient background : left transparent, middle opaque, right transparent */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-top: 4px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+#dialogue_box {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#dialogue_button {
+    aspect-ratio: 1/1;
+    background-image: url(../static/images/bouton_suivant.png);
+    background-color: grey;
+    border-width: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.waypoints_class {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    background-image: url('./images/waypoints.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 5%;
+    aspect-ratio: 1/1;
+    padding: 0%;
+    margin: 0;
+}
